@@ -1,0 +1,17 @@
+@import 'helpers/mixins';
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1080px;  
+}
+
+.grid {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  
+  .col {
+    display: table-cell;
+  }
+}
