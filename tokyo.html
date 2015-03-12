@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+  .grid * {
+    background-color: #F4A020;
+    text-align: center;
+  }
+  .grid *:nth-child(even){
+    background-color: #87D6D5;
+  }
+  
+  .grid .grid * {
+    background-color: #d48000;
+    color: white;
+  }
+  
+  .grid .grid *:nth-child(even){
+    background-color: #57a6a5;
+  }
+  
+  h1 {
+    margin-top: 100px;
+    text-align: center;
+  }
+  </style>
+  <link rel='stylesheet' href='public/css/gridzilla.css'/>
+</head>
+
+<body class='container'>
+  <h1>12 Column Grid Example</h1>
+  <div class='grid'>
+    <div class="cell-1">1</div>
+    <div class="cell-1">2</div>
+    <div class="cell-1">3</div>
+    <div class="cell-1">4</div>
+    <div class="cell-1">5</div>
+    <div class="cell-1">6</div>
+    <div class="cell-1">7</div>
+    <div class="cell-1">8</div>
+    <div class="cell-1">9</div>
+    <div class="cell-1">10</div>
+    <div class="cell-1">11</div>
+    <div class="cell-1">12</div>
+  </div>
+  <h1>12 Column Grid, that has extra columns</h1>
+  <div class='grid'>
+    <div class="cell-1">1</div>
+    <div class="cell-1">2</div>
+    <div class="cell-1">3</div>
+    <div class="cell-1">4</div>
+    <div class="cell-1">5</div>
+    <div class="cell-1">6</div>
+    <div class="cell-1">7</div>
+    <div class="cell-1">8</div>
+    <div class="cell-1">9</div>
+    <div class="cell-1">10</div>
+    <div class="cell-1">11</div>
+    <div class="cell-1">12</div>
+    <div class="cell-1">13</div>
+    <div class="cell-1">14</div>
+    <div class="cell-1">15</div>
+    <div class="cell-1">16</div>
+  </div>
+  <h1>2 Column Grid using only cell-4's (adapts to cell-6)</h1>
+  <div class='grid'>
+    <div class="cell-4">4</div>
+    <div class="cell-4">4</div>
+  </div>
+  <h1>4 Column Grid</h1>
+  <div class='grid'>
+    <div class="cell-4">4</div>
+    <div class="cell-4">4</div>
+    <div class="cell-4">4</div>
+    <div class="cell-4">4</div>
+  </div>
+  <h1>2 Column Grid, split with 4/8</h1>
+  <div class='grid'>
+    <div class="cell-4">4</div>
+    <div class="cell-8">8</div>
+  </div>
+  <h1>2 Column Grid, left column nested</h1>
+  <div class='grid'>
+    <div class="cell-6">
+      <div class='grid'>
+        <div class="cell-4">1</div>
+        <div class="cell-4">2</div>
+        <div class="cell-4">3</div>
+      </div>
+    </div>
+    <div class="cell-6">6</div>
+  </div>
+  <h1>4 Column Grid, tons of content in one cell</h1>
+  <div class='grid'>
+    <div class="cell-6">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In aliquam nibh id suscipit eleifend. Vestibulum ultricies magna vel aliquet fringilla. Integer dignissim porta placerat. Sed aliquet, ipsum finibus posuere eleifend, sapien quam egestas dolor, ut imperdiet erat augue in ex. Etiam commodo elit non tellus malesuada, quis euismod arcu luctus. Quisque molestie auctor porttitor. Nullam consequat dolor velit, pharetra tempor risus faucibus ac. Nullam euismod mattis nulla, quis malesuada nisi eleifend non. Donec tortor nisl, posuere ac eros congue, volutpat viverra odio. Phasellus sit amet bibendum elit, vitae porttitor libero.
+
+Etiam ipsum nibh, auctor scelerisque odio vel, hendrerit mattis ante. Donec volutpat accumsan venenatis. Ut id augue a magna sollicitudin ultrices. Sed egestas dignissim purus, in cursus mi hendrerit et. Mauris non felis vitae metus volutpat maximus. Aliquam turpis ante, blandit ac imperdiet vel, fringilla vel tortor. Cras iaculis odio tellus, sit amet porttitor est egestas id. Fusce vel quam placerat, dictum purus in, consequat purus. Morbi quis porttitor diam. Morbi faucibus massa urna, vel cursus augue tempor nec. Phasellus commodo purus ut laoreet porta. Proin et libero ornare, consectetur leo iaculis, malesuada quam. Sed eu ipsum nec mi tempor dapibus.
+
+Maecenas nec ultricies lectus. Nam volutpat ante et odio gravida, in mattis leo porta. Vivamus egestas nulla et ante semper, vitae scelerisque nunc pellentesque. Ut blandit lectus non quam facilisis molestie. Vivamus sodales eget nisl sed malesuada. Nunc sodales, turpis ac tristique pretium, nibh mauris volutpat nulla, sit amet pellentesque ante erat non ex. Proin ac nibh malesuada, suscipit nunc euismod, finibus ligula. Fusce dictum lobortis placerat. Nam vel elementum ante. Fusce consequat, neque a venenatis gravida, ante turpis lobortis leo, sed bibendum mi lacus ac diam.
+    </div>
+    <div class="cell-6">6</div>
+  </div>
+  
+  <h2>Things to note.</h2>
+  <h4>This grid system is super flexible. If you go over or under the 12 column layout, it'll adapt.</h4>
+  <h4>Because of the fixed layout, if you use two cell-4's, they'll adapt to cell-6's. If you add two more cell-4's they'll go back to cell-4's.</h4>
+  <h4>Nesting in this grid system is also super flexible. Refer to some examples above to see!</h4>
+</body>
+
+</html>

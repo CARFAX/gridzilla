@@ -1,0 +1,8 @@
+@mixin divide-cells(){
+  @for $i from 1 to 12 {
+    &-#{$i} {
+      display: table-cell;
+      width: ($i / 12 ) * 100%;
+    }
+  }
+}

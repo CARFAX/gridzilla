@@ -1,4 +1,4 @@
-@import 'helpers/mixins';
+@import '../helpers/mixins';
 
 .container {
   margin-right: auto;
@@ -11,7 +11,8 @@
   table-layout: fixed;
   width: 100%;
   
-  .col {
-    display: table-cell;
+  
+  .cell {
+    @include divide-cells();
   }
 }
