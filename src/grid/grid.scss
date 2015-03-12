@@ -1,4 +1,5 @@
 @import '../helpers/mixins';
+@import '../helpers/variables';
 
 .container {
   margin-right: auto;
@@ -8,11 +9,37 @@
 
 .grid {
   display: table;
-  table-layout: fixed;
   width: 100%;
   
-  
-  .cell {
-    @include divide-cells();
+  &.fixed {
+    table-layout: fixed;
   }
+    
+  @media #{$lg}{
+    .cell-lg {
+      @include divide-cells();
+    }
+  }
+  
+  @media #{$md} {
+    .cell-md {
+      @include divide-cells();
+    }
+  }
+  
+  @media #{$xs}{
+    .cell-xs {
+      @include divide-cells();
+    }
+  }
+  
+  @media #{$sm}{
+    .cell-sm {
+      @include divide-cells();
+    }
+  }
+  
+  
+
+  
 }

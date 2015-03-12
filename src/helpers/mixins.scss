@@ -1,4 +1,7 @@
 @mixin divide-cells(){
+  
+  &-0 { display: none; }
+  
   @for $i from 1 to 12 {
     &-#{$i} {
       display: table-cell;
