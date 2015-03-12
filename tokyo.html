@@ -6,6 +6,7 @@
   .grid * {
     background-color: #F4A020;
     text-align: center;
+    padding: 15px 0;
   }
   .grid *:nth-child(even){
     background-color: #87D6D5;
@@ -19,6 +20,7 @@
   .grid .grid *:nth-child(even){
     background-color: #57a6a5;
   }
+  
   
   h1 {
     margin-top: 100px;
@@ -103,9 +105,22 @@ Maecenas nec ultricies lectus. Nam volutpat ante et odio gravida, in mattis leo 
     <div class="cell-6">6</div>
   </div>
   
+  <h1>2 Column Grid, left column nested</h1>
+  <div class='grid'>
+    <div class="cell-2">2</div>
+    <div class="cell-1">1</div>
+    <div class="cell-2">2</div>
+    <div class="cell-1">1</div>
+    <div class="cell-2">2</div>
+    <div class="cell-1">1</div>
+    <div class="cell-2">2</div>
+    <div class="cell-1">1</div>
+    <div class="cell-2">2</div>
+  </div>
+  
   <h2>Things to note.</h2>
   <h4>This grid system is super flexible. If you go over or under the 12 column layout, it'll adapt.</h4>
-  <h4>Because of the fixed layout, if you use two cell-4's, they'll adapt to cell-6's. If you add two more cell-4's they'll go back to cell-4's.</h4>
+  <h4>Because of the fixed layout, if you use two cell-4's, they'll adapt to cell-6's. If you add two more cell-4's they'll go back to cell-4's. Basically, it'll fill up the whole 12 columns for you if you dont actually specify 12 columns.</h4>
   <h4>Nesting in this grid system is also super flexible. Refer to some examples above to see!</h4>
 </body>
 
