@@ -18,7 +18,8 @@ Using this library is as simple as installing it (see above), and then including
 
 ####Note: Using this file will conflict with bootstrap.
 
-This is made to be a replacement to Bootstrap's grid, hence the confliction. That being said, the implementation is very similar for ease of use.
+This is made to be a replacement to Bootstrap's grid, hence the confliction. That being said, the implementation is very similar for ease of use. For example, instead of `.row` you would use `.grid`. Instead of `col-md-5` in bootstrap, you'd use `cell-md-5`.
+
 After including the CSS file, you can write the following HTML to implement the grid.
 
     <div class="grid">
