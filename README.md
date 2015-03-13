@@ -1,6 +1,6 @@
 #Gridzilla
 
-Gridzilla is a grid-based system aimed to replace bootstrap's grid in newer projects. It uses `{display: table}` religiously and has a more natural feel and flow because of it. 
+Gridzilla is a grid-based system aimed to replace bootstrap's grid in newer projects. It uses `{display: table}` religiously and has a more natural feel and flow because of it.
 
 Curious about the browser support? We were too!
 http://caniuse.com/#feat=css-table
@@ -16,7 +16,7 @@ Alternatively, you can download the compiled CSS file from `/public/css/gridzill
 ##Usage
 Using this library is as simple as installing it (see above), and then including the CSS file in your application. The CSS file can be found under `/public/css/gridzilla.css` and is loaded just like any other CSS file.
 
-####Note: Using this file will conflict with bootstrap. 
+####Note: Using this file will conflict with bootstrap.
 
 This is made to be a replacement to Bootstrap's grid, hence the confliction. That being said, the implementation is very similar for ease of use.
 After including the CSS file, you can write the following HTML to implement the grid.
@@ -62,7 +62,7 @@ Simply clone the repo and then run
 
 You should install your dependencies. From here, you can modify the .sass files to make your changes. When you're ready to test your changes, just run
 
-    gulp compile
+    gulp
 
 from the root directory. Then, open Sample.html and make sure everything looks as expected!
 
