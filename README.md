@@ -2,6 +2,9 @@
 
 Gridzilla is a grid-based system aimed to replace bootstrap's grid in newer projects. It uses `{display: table}` religiously and has a more natural feel and flow because of it. 
 
+Curious about the browser support? We were too!
+http://caniuse.com/#feat=css-table
+
 ##Installation
 
 This library is best installed via bower.
