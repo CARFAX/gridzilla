@@ -74,4 +74,5 @@ A github page will come soon, allowing you to see the different grids in action.
 ##Contact and License Info
 
 Author: CARFAX First Class Frontend Team
+
 License: MIT
