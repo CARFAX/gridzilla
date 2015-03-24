@@ -5,6 +5,7 @@
   @for $i from 1 to 12 {
     &-#{$i} {
       display: table-cell;
+      vertical-align: top;
       width: ($i / 12 ) * 100%;
     }
   }
