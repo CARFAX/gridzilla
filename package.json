@@ -1,6 +1,6 @@
 {
   "name": "gridzilla",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A table based grid system",
   "main": "index.js",
   "scripts": {
