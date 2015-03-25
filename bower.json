@@ -10,6 +10,10 @@
   "authors": [
     "CARFAX First Class Frontend Team"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CARFAX/gridzilla.git"
+  },
   "license": "MIT",
   "ignore": [
     "**/.*",
