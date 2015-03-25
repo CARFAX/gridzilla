@@ -1,8 +1,12 @@
 #Gridzilla
 
-Gridzilla is a grid-based system aimed to replace bootstrap's grid in newer projects. It uses `{display: table}` religiously and has a more natural feel and flow because of it.
+Gridzilla is a CSS library which provides a grid-based layout system.
 
-Curious about the browser support? We were too!
+More specifically, a `{display: table}`-based grid system intended to alleviate the pains of `float`-based grid.
+
+If you need older browser support, then you probably need floats.  If you are designing a modern website, then enjoy the more natural flow provided by CSS tables.
+
+Curious about the specific browser support? We were too!
 http://caniuse.com/#feat=css-table
 
 ##Installation
