@@ -1,4 +1,4 @@
-@mixin divide-cells(){
+@mixin divide-cells() {
   
   &-0 { display: none; }
   
@@ -11,7 +11,7 @@
   }
 }
 
-@mixin offset-cells($direction){
+@mixin offset-cells($direction) {
   @for $i from 1 to 12 {
     &-#{$i} {
       padding-#{$direction}: ($i / 12 ) * 100%;
@@ -19,7 +19,7 @@
   }
 }
 
-@mixin subclass-border-spacing($units){
+@mixin subclass-border-spacing($units) {
   &-padding {
     border-spacing: #{$units}rem;
   }
