@@ -1,6 +1,6 @@
 {
   "name": "cfx-gridzilla",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "homepage": "https://github.com/CARFAX/gridzilla",
   "description": "A {display:table} based grid system made to alleviate the pain point of 'float'-based grids.",
   "main": "/public/css/gridzilla.css",

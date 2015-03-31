@@ -1,8 +1,59 @@
+/*
+  Should be placed on the grid to handle any border-spacing
+  This is a mixin to be used by anyone building from source
+  to have a more customizable gridzilla experience. 
+*/
 .grid {
   display: table;
   width: 100%; }
+  .grid-padding {
+    border-spacing: 1rem; }
   .grid.fixed {
     table-layout: fixed; }
+  .grid .cell-pre-1 {
+    padding-left: 8.33333%; }
+  .grid .cell-pre-2 {
+    padding-left: 16.66667%; }
+  .grid .cell-pre-3 {
+    padding-left: 25%; }
+  .grid .cell-pre-4 {
+    padding-left: 33.33333%; }
+  .grid .cell-pre-5 {
+    padding-left: 41.66667%; }
+  .grid .cell-pre-6 {
+    padding-left: 50%; }
+  .grid .cell-pre-7 {
+    padding-left: 58.33333%; }
+  .grid .cell-pre-8 {
+    padding-left: 66.66667%; }
+  .grid .cell-pre-9 {
+    padding-left: 75%; }
+  .grid .cell-pre-10 {
+    padding-left: 83.33333%; }
+  .grid .cell-pre-11 {
+    padding-left: 91.66667%; }
+  .grid .cell-post-1 {
+    padding-right: 8.33333%; }
+  .grid .cell-post-2 {
+    padding-right: 16.66667%; }
+  .grid .cell-post-3 {
+    padding-right: 25%; }
+  .grid .cell-post-4 {
+    padding-right: 33.33333%; }
+  .grid .cell-post-5 {
+    padding-right: 41.66667%; }
+  .grid .cell-post-6 {
+    padding-right: 50%; }
+  .grid .cell-post-7 {
+    padding-right: 58.33333%; }
+  .grid .cell-post-8 {
+    padding-right: 66.66667%; }
+  .grid .cell-post-9 {
+    padding-right: 75%; }
+  .grid .cell-post-10 {
+    padding-right: 83.33333%; }
+  .grid .cell-post-11 {
+    padding-right: 91.66667%; }
   @media (min-width: 1200px) {
     .grid .cell-lg-0 {
       display: none; }
