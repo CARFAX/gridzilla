@@ -2,7 +2,7 @@
 
 Gridzilla is a CSS library which provides a grid-based layout system.
 
-More specifically, a `{display: table}`-based grid system intended to alleviate the pains of `float`-based grid.
+More specifically, a `{display: table}`-based grid system intended to alleviate the pains of the `float`-based grid.
 
 If you need older browser support, then you probably need floats.  If you are designing a modern website, then enjoy the more natural flow provided by CSS tables.
 
