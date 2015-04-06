@@ -49,6 +49,15 @@ The following classes are valid, where $X is a number from 0 to 12.
 
 Additionally, setting any cell's $X value to 0 will cause the cell to no longer display at the breakpoint. Our breakpoints follow Bootstrap3's standardized breakpoints.
 
+###Offsets
+Need to include some offsets? Offsets in gridzilla are padding based, as the table display doesn't play well with margins. That being said, they're really easy to use. Offsets that should happen before the cell are implemented like so..
+
+    cell-pre-$X
+    
+Offsets that should happen after the cell are implemented like this...
+    
+    cell-post-$X
+
 ##Building From Source
 
 Interested in contributing? We're happy to have you!
