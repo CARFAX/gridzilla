@@ -69,6 +69,10 @@ Your grid html should look like this if you're including the spacing...
 
 Interested in contributing? We're happy to have you!
 
+Just follow the typical ["Fork & Pull"](https://help.github.com/articles/using-pull-requests/) GitHub collaborative model.
+
+If you have ideas or questions just [open an issue](https://github.com/CARFAX/gridzilla/issues/new).
+
 ###Requirements
 
 Before you're able to build, you'll need to have NPM and Ruby installed. Additionally, you'll need the SASS gem installed in Ruby. We choose to use Ruby instead of Node-SASS because Node-SASS is a port of the original Ruby version. This way, our SASS is kept up to date with the latest features. Lastly, you'll need Gulp installed. This can be accomplished by running
