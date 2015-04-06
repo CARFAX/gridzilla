@@ -58,6 +58,13 @@ Offsets that should happen after the cell are implemented like this...
     
     cell-post-$X
 
+###Need inherit spacing between the cells?
+Just add the `.grid-padding` property onto your grid. This will evenly space out your cells for you with ample room in between. If you need to change the spacing, it's as simple as overriding one property or changing a variable if you're building from source.
+
+Your grid html should look like this if you're including the spacing...
+    
+    <section class="grid grid-padding"></section>
+
 ##Building From Source
 
 Interested in contributing? We're happy to have you!
