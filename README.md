@@ -99,8 +99,8 @@ If you make any improvements, we'd love to incorporate them into the source at s
 
 A github page will come soon, allowing you to see the different grids in action.
 
-##Contact and License Info
+##Author and License Info
 
 Author: CARFAX First Class Frontend Team
 
-License: MIT
+[MIT License](LICENSE)
