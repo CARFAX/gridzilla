@@ -11,5 +11,5 @@ gulp.task('compile', function(){
             console.log(err.message);
         })
         .pipe(concat('gridzilla.css'))
-        .pipe(gulp.dest('public/css/'));
+        .pipe(gulp.dest('dist/'));
 });
