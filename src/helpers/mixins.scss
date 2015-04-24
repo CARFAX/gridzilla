@@ -1,11 +1,26 @@
-@mixin divide-cells(){
+@mixin divide-cells() {
   
   &-0 { display: none; }
   
   @for $i from 1 to 12 {
     &-#{$i} {
       display: table-cell;
+      vertical-align: top;
       width: ($i / 12 ) * 100%;
     }
+  }
+}
+
+@mixin offset-cells($direction) {
+  @for $i from 1 to 12 {
+    &-#{$i} {
+      padding-#{$direction}: ($i / 12 ) * 100%;
+    }
+  }
+}
+
+@mixin subclass-border-spacing($units) {
+  &-padding {
+    border-spacing: #{$units}rem;
   }
 }

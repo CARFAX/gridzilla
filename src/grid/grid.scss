@@ -1,21 +1,24 @@
 @import '../helpers/mixins';
 @import '../helpers/variables';
 
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1080px;  
-}
-
 .grid {
   display: table;
   width: 100%;
+  @include subclass-border-spacing(1);
   
   &.fixed {
     table-layout: fixed;
   }
+  
+  .cell-pre {
+    @include offset-cells("left");
+  }
+  
+  .cell-post {
+    @include offset-cells("right");
+  }
     
-  @media #{$lg}{
+  @media #{$lg} {
     .cell-lg {
       @include divide-cells();
     }
@@ -27,19 +30,17 @@
     }
   }
   
-  @media #{$xs}{
+  @media #{$xs} {
     .cell-xs {
       @include divide-cells();
     }
   }
   
-  @media #{$sm}{
+  @media #{$sm} {
     .cell-sm {
       @include divide-cells();
     }
   }
-  
-  
 
   
 }

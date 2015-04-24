@@ -3,36 +3,36 @@
 
 <head>
   <style>
-  .grid * {
-    background-color: #F4A020;
-    text-align: center;
-    padding: 15px 0;
-  }
-  .grid *:nth-child(even){
-    background-color: #87D6D5;
-  }
-  
-  .grid .grid * {
-    background-color: #d48000;
-    color: white;
-  }
-  
-  .grid .grid *:nth-child(even){
-    background-color: #57a6a5;
-  }
-  
-  
-  h1 {
-    margin-top: 100px;
-    text-align: center;
-  }
+    /* Just adding some styles here to make this sample easier on the eyes; Nothing core to Gridzilla that you need to copy */
+    .grid * {
+      background-color: #F4A020;
+      text-align: center;
+      padding: 15px 0;
+    }
+    .grid *:nth-child(even) {
+      background-color: #87D6D5;
+    }
+
+    .grid .grid * {
+      background-color: #d48000;
+      color: white;
+    }
+
+    .grid .grid *:nth-child(even) {
+      background-color: #57a6a5;
+    }
+
+    h1 {
+      margin-top: 100px;
+      text-align: center;
+    }
   </style>
-  <link rel='stylesheet' href='public/css/gridzilla.css'/>
+  <link rel="stylesheet" href="public/css/gridzilla.css"/>
 </head>
 
-<body class='container'>
+<body class="container">
   <h1>12 Column Grid Example, Disappearing Columns</h1>
-  <div class='grid'>
+  <div class="grid">
     <div class="cell-md-1 cell-sm-3 cell-xs-12">1</div>
     <div class="cell-md-1 cell-sm-3 cell-xs-12">2</div>
     <div class="cell-md-1 cell-sm-3 cell-xs-0">3</div>
@@ -47,7 +47,7 @@
     <div class="cell-md-1 cell-sm-0 cell-xs-0">12</div>
   </div>
   <h1>16 Column fixed Grid, that has extra columns. </h1>
-  <div class='grid fixed'>
+  <div class="grid fixed">
     <div class="cell-md-1 cell-sm-2">1</div>
     <div class="cell-md-1 cell-sm-2">2</div>
     <div class="cell-md-1 cell-sm-2">3</div>
@@ -67,13 +67,13 @@
   </div>
   
   <h1>2 Column Grid using only cell-4's (adapts to cell-6)</h1>
-  <div class='grid'>
+  <div class="grid">
     <div class="cell-md-4">4</div>
     <div class="cell-md-4">4</div>
   </div>
   
   <h1>4 Column Grid</h1>
-  <div class='grid'>
+  <div class="grid">
     <div class="cell-4">4</div>
     <div class="cell-4">4</div>
     <div class="cell-4">4</div>
@@ -81,14 +81,14 @@
   </div>
   
   <h1>2 Column Grid, split with 4/8; 4 disappears on phones</h1>
-  <div class='grid'>
+  <div class="grid">
     <div class="cell-md-4 cell-sm-2 cell-xs-0">4</div>
     <div class="cell-md-8 cell-sm-10 cell-xs-12">8</div>
   </div>
   <h1>2 Column Grid, left column nested, columns disappear as size decreases</h1>
-  <div class='grid'>
+  <div class="grid">
     <div class="cell-md-6">
-      <div class='grid'>
+      <div class="grid">
         <div class="cell-md-3 cell-sm-6">1</div>
         <div class="cell-md-3 cell-sm-6">2</div>
         <div class="cell-md-3 cell-xs-0 cell-sm-0">3</div>
@@ -98,7 +98,7 @@
     <div class="cell-md-6">6</div>
   </div>
   <h1>4 Column Grid, tons of content in one cell</h1>
-  <div class='grid'>
+  <div class="grid">
     <div class="cell-md-6 cell-sm-11">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. In aliquam nibh id suscipit eleifend. Vestibulum ultricies magna vel aliquet fringilla. Integer dignissim porta placerat. Sed aliquet, ipsum finibus posuere eleifend, sapien quam egestas dolor, ut imperdiet erat augue in ex. Etiam commodo elit non tellus malesuada, quis euismod arcu luctus. Quisque molestie auctor porttitor. Nullam consequat dolor velit, pharetra tempor risus faucibus ac. Nullam euismod mattis nulla, quis malesuada nisi eleifend non. Donec tortor nisl, posuere ac eros congue, volutpat viverra odio. Phasellus sit amet bibendum elit, vitae porttitor libero.
 
@@ -110,7 +110,7 @@ Maecenas nec ultricies lectus. Nam volutpat ante et odio gravida, in mattis leo 
   </div>
   
   <h1>Standard Fixed Grid Implementation</h1>
-  <div class='grid fixed'>
+  <div class="grid fixed">
     <div class="cell-md-2">2</div>
     <div class="cell-md-1">1</div>
     <div class="cell-md-2">2</div>
@@ -121,10 +121,31 @@ Maecenas nec ultricies lectus. Nam volutpat ante et odio gravida, in mattis leo 
     <div class="cell-md-1">1</div>
     <div class="cell-md-2">2</div>
   </div>
+
+  <h1>Grid with Padding</h1>
+  <div class="grid grid-padding">
+      <div class="cell-md-2">2</div>
+      <div class="cell-md-1">1</div>
+      <div class="cell-md-2">2</div>
+      <div class="cell-md-1">1</div>
+      <div class="cell-md-2">2</div>
+      <div class="cell-md-1">1</div>
+      <div class="cell-md-2">2</div>
+      <div class="cell-md-1">1</div>
+      <div class="cell-md-2">2</div>
+  </div>
+
+  <h1>Offsets (Pre/Post)</h1>
+  <div class="grid">
+    <div class="cell-md-4 cell-pre-4 cell-post-4">4</div>
+  </div>
+  <div class="grid">
+    <div class="cell-md-8 cell-pre-4">8</div>
+  </div>
+  <div class="grid">
+    <div class="cell-md-8 cell-post-4">8</div>
+  </div>
   
-  <h2>Things to note.</h2>
-  <h4>If you add the .fixed class onto the grid and your beyond the width of the grid, your columns will automatically be resized for you.</h4>
-  <h4>Nesting in this grid system is also super flexible. Refer to some examples above to see!</h4>
 </body>
 
 </html>
