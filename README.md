@@ -11,8 +11,9 @@ http://caniuse.com/#feat=css-table
 
 ##Installation
 
-This library is best installed via bower.
-    bower install cfx-gridzilla
+This library is best installed via bower:
+
+    $ bower install gridzilla
 
 Alternatively, you can download the compiled CSS file from `/public/css/gridzilla.css` and include it in your application just like any other CSS file.
 
